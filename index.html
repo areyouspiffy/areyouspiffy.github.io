@@ -10,35 +10,33 @@
   <style type="text/css">
     html,
     body,
-    .c {
+    article {
       font-size: 1em;
       font-family: 'Open Sans', sans-serif;
-      color: #000;
       margin: 0;
-      height: 100%;
-      background: #fff;
+      height: 100vh;
     }
 
-    .c {
+    article {
       box-sizing: border-box;
       border: 0px solid black;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      padding: 10%;
     }
 
-    .c h1 {
+    article h1 {
       font-weight: 800;
     }
 
-    .c h3 {
+    article h3 {
       font-weight: 600;
     }
 
-    .c u {
+    article u {
       text-decoration: none;
-      border-bottom: .15em solid #000;
     }
 
     .h {
@@ -65,22 +63,60 @@
     }
 
     .h a:hover {
-      color: hsl(0,0%,100%);
+      color: hsl(0, 0%, 100%);
       background-color: hsl(0, 100%, 70%);
     }
 
+    .highlight {
+      color: #000;
+      background-color: hsl(55, 100%, 60%);
+      padding: 5px;
+    }
+
+    article:nth-child(even) {
+      background-color: #FFF;
+    }
+
+    article:nth-child(odd) {
+      color: #FFF;
+      background-color: #000;
+    }
+
+    article:nth-of-type(3) .highlight {
+      background-color: hsl(0, 100%, 70%);
+    }
+
+    .arrow {
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      bottom: 2em;
+    }
+
   </style>
-  <div class="c">
+  <article class="c">
     <h1>hey there.</h1>
-    <h1 class="sep">...</h1>
+    <div class="arrow">
+      <svg viewbox="0 0 70 70">
+        <polyline points="15,30 35,45 55,30" stroke="black" stroke-width="5" fill="none" />
+      </svg>
+    </div>
+  </article>
+  <article class="c" id="2">
     <h3>my name is brian.</h3>
-    <h3>i am a <u>scala</u> and <u>akka</u> developer.</h3>
+    <h3>i am a <u class="highlight">scala</u> and <u class="highlight">akka</u> developer.</h3>
     <div class="h">
       <a href="https://github.com/areyouspiffy">github</a>
       <a href="mailto:brian@brianmowen.com">email</a>
       <a href="https://www.linkedin.com/in/brianmowen">linkedin</a>
     </div>
-  </div>
+  </article>
+  <article class="c">
+    <h3>i enjoy <u class="highlight">functional programming</u> and long walks on the</h1>
+  </article>
+  <article class="c">
+    <h1>_.beach</h1>
+  </article>
 </body>
 
 </html>

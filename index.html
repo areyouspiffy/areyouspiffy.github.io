@@ -3,6 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800" rel="stylesheet">
 </head>
 
 <body>
@@ -12,10 +13,10 @@
     .c {
       font-size: 1em;
       font-family: 'Open Sans', sans-serif;
-      color: #ECEFF1;
+      color: #000;
       margin: 0;
       height: 100%;
-      background: linear-gradient(-45deg, hsl(260, 100%, 63%) 30%, hsl(287, 100%, 70%) 100%);
+      background: #fff;
     }
 
     .c {
@@ -35,6 +36,11 @@
       font-weight: 600;
     }
 
+    .c u {
+      text-decoration: none;
+      border-bottom: .15em solid #000;
+    }
+
     .h {
       box-sizing: border-box;
       border: 0px solid black;
@@ -43,29 +49,32 @@
       justify-content: center;
       flex-direction: row;
       flex-wrap: wrap;
+      margin-top: 2em;
     }
 
     .h a {
       padding: .5em 1em;
-      border: 1px solid white;
+      border: 2px solid hsl(0, 100%, 70%);
       border-radius: 2px;
       text-transform: lowercase;
-      font-weight: 100;
+      font-weight: 600;
       margin: 2px;
       text-decoration: none;
       color: inherit;
-      transition: background-color .5s;
+      transition: background-color .3s;
     }
 
     .h a:hover {
-      color: hsl(0,0%,20%);
-      background-color: white;
+      color: hsl(0,0%,100%);
+      background-color: hsl(0, 100%, 70%);
     }
 
   </style>
   <div class="c">
-    <h1>brian owen</h1>
-    <h3>scala and akka developer</h3>
+    <h1>hey there.</h1>
+    <h1 class="sep">...</h1>
+    <h3>my name is brian.</h3>
+    <h3>i am a <u>scala</u> and <u>akka</u> developer.</h3>
     <div class="h">
       <a href="https://github.com/areyouspiffy">github</a>
       <a href="mailto:brian@brianmowen.com">email</a>
